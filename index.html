@@ -1,122 +1,25 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NoviPL — aplikacje mobilne i rozwiązania dla firm</title>
-  <meta name="description" content="NoviPL — tworzenie aplikacji mobilnych, narzędzi dla firm i nowoczesnych rozwiązań automatyzujących codzienną pracę." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-</head>
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NoviPL | Aplikacje mobilne</title>
+<link rel="stylesheet" href="style.css"></head>
 <body>
-  <canvas id="network-bg" aria-hidden="true"></canvas>
-
-  <header class="site-header">
-    <a class="brand" href="#top">NoviPL</a>
-    <button class="menu-toggle" aria-label="Otwórz menu">☰</button>
-    <nav class="nav">
-      <a href="#projekty">Projekty</a>
-      <a href="#technologie">Technologie</a>
-      <a href="#oferta">Oferta</a>
-      <a href="#kontakt">Kontakt</a>
-    </nav>
-  </header>
-
-  <main id="top">
-    <section class="hero section">
-      <div class="hero-content reveal">
-        <p class="eyebrow">Mobile Apps • Backend • Automation</p>
-        <h1>NoviPL</h1>
-        <p class="lead">Tworzę aplikacje mobilne i nowoczesne rozwiązania, które upraszczają codzienną pracę.</p>
-        <div class="hero-actions">
-          <a class="btn primary" href="#projekty">Poznaj projekty</a>
-          <a class="btn ghost" href="#kontakt">Porozmawiajmy</a>
-        </div>
-      </div>
-      <div class="scroll-hint">Przewiń</div>
-    </section>
-
-    <section class="section intro reveal">
-      <div class="section-label">O marce</div>
-      <h2>Strona dla aplikacji, portfolio i przyszłych realizacji.</h2>
-      <p>Za marką NoviPL stoi Jarosław Nowinkowski. Buduję proste, szybkie i praktyczne aplikacje Android oraz narzędzia wspierające firmy w organizacji pracy, danych i procesów.</p>
-    </section>
-
-    <section id="projekty" class="section projects">
-      <div class="section-heading reveal">
-        <div class="section-label">Portfolio</div>
-        <h2>Projekty</h2>
-        <p>Portfolio będzie rosło razem z kolejnymi aplikacjami. Na start pokazujemy wyłącznie projekty publiczne.</p>
-      </div>
-
-      <article class="project-card featured reveal">
-        <div class="phone-mockup">
-          <div class="phone-screen">
-            <div class="app-topbar"></div>
-            <div class="check-row done"><span></span>Zakupy</div>
-            <div class="check-row"><span></span>Dom</div>
-            <div class="check-row done"><span></span>Praca</div>
-            <div class="check-row"><span></span>Pomysły</div>
-            <div class="app-button">+</div>
-          </div>
-        </div>
-        <div class="project-content">
-          <span class="status">Aplikacja publiczna</span>
-          <h3>PstrykList</h3>
-          <p>Prosta aplikacja checklistowa na Androida, zaprojektowana z myślą o szybkim zapisywaniu, odhaczaniu i porządkowaniu codziennych zadań.</p>
-          <div class="tags">
-            <span>Flutter</span><span>Dart</span><span>Android</span><span>SQLite</span>
-          </div>
-          <a class="text-link" href="#kontakt">Chcesz podobną aplikację?</a>
-        </div>
-      </article>
-
-      <div class="project-grid reveal">
-        <div class="mini-project"><span>02</span><h3>Kolejna aplikacja</h3><p>Miejsce na następny publiczny projekt.</p></div>
-        <div class="mini-project"><span>03</span><h3>Kolejna aplikacja</h3><p>Miejsce na następny publiczny projekt.</p></div>
-        <div class="mini-project"><span>04</span><h3>Kolejna aplikacja</h3><p>Miejsce na następny publiczny projekt.</p></div>
-        <div class="mini-project"><span>05</span><h3>Kolejna aplikacja</h3><p>Miejsce na następny publiczny projekt.</p></div>
-      </div>
-    </section>
-
-    <section id="technologie" class="section tech reveal">
-      <div class="section-label">Stack</div>
-      <h2>Technologie, które dobrze pasują do praktycznych aplikacji.</h2>
-      <div class="tech-cloud">
-        <span>Flutter</span><span>Dart</span><span>Android</span><span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>SQLite</span><span>Git</span><span>Linux</span>
-      </div>
-    </section>
-
-    <section id="oferta" class="section offer">
-      <div class="section-heading reveal">
-        <div class="section-label">Oferta</div>
-        <h2>Co mogę zbudować?</h2>
-      </div>
-      <div class="offer-grid reveal">
-        <div><h3>Aplikacje Android</h3><p>Proste, szybkie i wygodne aplikacje mobilne dopasowane do konkretnego zastosowania.</p></div>
-        <div><h3>Narzędzia dla firm</h3><p>Systemy pomagające porządkować zadania, dane, zgłoszenia i codzienną pracę.</p></div>
-        <div><h3>Automatyzacja</h3><p>Rozwiązania ograniczające ręczne, powtarzalne czynności i poprawiające organizację.</p></div>
-      </div>
-    </section>
-
-    <section id="kontakt" class="section contact reveal">
-      <p class="eyebrow">Masz pomysł?</p>
-      <h2>Porozmawiajmy.</h2>
-      <p>Opisz krótko, jakiej aplikacji lub narzędzia potrzebujesz.</p>
-      <div class="contact-actions">
-        <a class="btn primary" href="mailto:jaroslawnowinkowski@gmail.com">Napisz e-mail</a>
-        <a class="btn ghost" href="https://github.com/NoviPL" target="_blank" rel="noopener">GitHub</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <span>© 2026 NoviPL / Jarosław Nowinkowski</span>
-    <a href="polityka-prywatnosci.html">Polityka prywatności</a>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+<canvas id="bg"></canvas>
+<header class="hero">
+<nav><div class="logo">NoviPL</div><a href="#kontakt">Kontakt</a></nav>
+<div class="center">
+<h1>Tworzę aplikacje mobilne<br>i nowoczesne rozwiązania dla firm.</h1>
+<p>Flutter • Python • FastAPI • Android • Linux</p>
+<div class="buttons"><a href="#projekty" class="btn">Zobacz projekty</a><a href="#kontakt" class="btn ghost">Kontakt</a></div>
+</div>
+</header>
+<section id="projekty"><h2>Projekty</h2>
+<div class="card"><h3>PstrykList</h3><p>Minimalistyczna aplikacja do zarządzania checklistami.</p></div>
+<div class="placeholder">Miejsce na kolejne aplikacje…</div>
+<div class="placeholder">Miejsce na kolejne aplikacje…</div>
+<div class="placeholder">Miejsce na kolejne aplikacje…</div>
+<div class="placeholder">Miejsce na kolejne aplikacje…</div>
+</section>
+<section><h2>Technologie</h2><div class="tech">Flutter • Dart • Python • FastAPI • PostgreSQL • SQLite • Git • Linux</div></section>
+<section id="kontakt"><h2>Masz pomysł?</h2><p>Zbudujmy go razem.</p><a class="btn" href="mailto:jaroslawnowinkowski@gmail.com">Napisz do mnie</a></section>
+<footer>© 2026 NoviPL</footer>
+<script src="script.js"></script></body></html>
