@@ -1,5 +1,6 @@
 document.getElementById('year').textContent = new Date().getFullYear();
 
+const elements = document.querySelectorAll('.reveal');
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -8,4 +9,4 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.12 });
 
-document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+elements.forEach((element) => observer.observe(element));

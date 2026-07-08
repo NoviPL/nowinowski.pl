@@ -3,112 +3,135 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jarosław Nowinowski | Aplikacje i systemy dla firm</title>
-  <meta name="description" content="Tworzę aplikacje mobilne, systemy dla firm i proste narzędzia automatyzujące codzienną pracę." />
+  <title>NoviPL — aplikacje mobilne i oprogramowanie dla firm</title>
+  <meta name="description" content="NoviPL — tworzenie aplikacji mobilnych, narzędzi dla firm i rozwiązań automatyzujących codzienną pracę." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <a href="#start" class="logo">nowinowski.pl</a>
-    <nav>
-      <a href="#o-mnie">O mnie</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#uslugi">Usługi</a>
-      <a href="#kontakt">Kontakt</a>
+  <header class="header">
+    <a class="logo" href="#top">NoviPL</a>
+    <nav class="nav">
+      <a href="#about">O mnie</a>
+      <a href="#projects">Projekty</a>
+      <a href="#services">Oferta</a>
+      <a href="#contact">Kontakt</a>
     </nav>
   </header>
 
-  <main>
-    <section id="start" class="hero section">
-      <div class="hero-content reveal">
-        <p class="eyebrow">Aplikacje mobilne • systemy firmowe • automatyzacja</p>
-        <h1>Jarosław Nowinowski</h1>
-        <p class="lead">Tworzę nowoczesne aplikacje Android, proste systemy dla firm i narzędzia, które pomagają uporządkować codzienną pracę.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="#portfolio">Zobacz portfolio</a>
-          <a class="button secondary" href="#kontakt">Skontaktuj się</a>
+  <main id="top">
+    <section class="hero section reveal">
+      <div class="hero-content">
+        <p class="eyebrow">Aplikacje mobilne • Backend • Automatyzacja</p>
+        <h1>Tworzę aplikacje, które rozwiązują realne problemy.</h1>
+        <p class="hero-text">
+          NoviPL to marka tworzona przez Jarosława Nowinkowskiego. Projektuję i rozwijam aplikacje mobilne oraz proste systemy wspierające codzienną pracę firm.
+        </p>
+        <div class="buttons">
+          <a class="btn primary" href="#projects">Zobacz projekty</a>
+          <a class="btn secondary" href="#contact">Skontaktuj się</a>
         </div>
       </div>
-    </section>
-
-    <section id="o-mnie" class="section narrow reveal">
-      <p class="eyebrow">O mnie</p>
-      <h2>Buduję praktyczne rozwiązania, które mają działać w realnym biznesie.</h2>
-      <p>Specjalizuję się w tworzeniu aplikacji mobilnych i prostych systemów wewnętrznych dla firm. Stawiam na przejrzysty interfejs, stabilność, synchronizację danych i rozwiązania, które można później rozwijać krok po kroku.</p>
-      <div class="tags">
+      <div class="hero-card">
         <span>Flutter</span>
-        <span>Android</span>
+        <span>Dart</span>
         <span>Python</span>
         <span>FastAPI</span>
         <span>PostgreSQL</span>
         <span>SQLite</span>
         <span>Linux</span>
+        <span>Android</span>
       </div>
     </section>
 
-    <section id="portfolio" class="section reveal">
-      <p class="eyebrow">Portfolio</p>
-      <h2>Wybrane projekty</h2>
-      <div class="cards">
-        <article class="card">
-          <h3>WTOApp</h3>
-          <p>Wewnętrzna aplikacja firmowa do obsługi zadań, komunikatów, floty, zdjęć, użytkowników, ról, backupów i synchronizacji z serwerem.</p>
-          <ul>
-            <li>Flutter + SQLite</li>
-            <li>FastAPI + PostgreSQL</li>
-            <li>Role użytkowników i historia zmian</li>
-          </ul>
-        </article>
-        <article class="card">
+    <section id="about" class="section reveal">
+      <p class="section-label">O mnie</p>
+      <h2>Nowoczesne rozwiązania bez zbędnego komplikowania.</h2>
+      <p class="wide-text">
+        Tworzę aplikacje mobilne na Androida oraz dedykowane narzędzia dla firm. Skupiam się na prostocie, czytelnym interfejsie, stabilności i praktycznym zastosowaniu. Każdy projekt traktuję jako rozwiązanie konkretnego problemu, a nie tylko jako sam kod.
+      </p>
+    </section>
+
+    <section class="section reveal">
+      <p class="section-label">Technologie</p>
+      <h2>Narzędzia, z których korzystam</h2>
+      <div class="grid tech-grid">
+        <div class="card">Flutter</div>
+        <div class="card">Dart</div>
+        <div class="card">Python</div>
+        <div class="card">FastAPI</div>
+        <div class="card">PostgreSQL</div>
+        <div class="card">SQLite</div>
+        <div class="card">Git</div>
+        <div class="card">Linux</div>
+      </div>
+    </section>
+
+    <section id="projects" class="section reveal">
+      <p class="section-label">Portfolio</p>
+      <h2>Projekty</h2>
+      <div class="project-card">
+        <div>
+          <p class="project-tag">Aplikacja Android</p>
           <h3>PstrykList</h3>
-          <p>Prosta aplikacja checklistowa na Androida, przygotowana z myślą o szybkim dodawaniu i odhaczaniu codziennych zadań.</p>
+          <p>
+            Prosta aplikacja checklistowa, która pomaga szybko tworzyć listy, odhaczać zadania i organizować codzienne obowiązki bez zbędnych funkcji.
+          </p>
           <ul>
-            <li>Android</li>
-            <li>Checklisty</li>
-            <li>Publikacja w Google Play</li>
+            <li>czytelny interfejs,</li>
+            <li>szybkie dodawanie pozycji,</li>
+            <li>lokalne działanie na telefonie,</li>
+            <li>projekt przygotowany pod publikację w Google Play.</li>
           </ul>
-        </article>
-        <article class="card muted">
-          <h3>Kolejny projekt</h3>
-          <p>Miejsce na następną aplikację do portfolio. Każdy kolejny projekt będzie wzmacniał markę i wiarygodność przy pozyskiwaniu zleceń.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="uslugi" class="section reveal">
-      <p class="eyebrow">Usługi</p>
-      <h2>W czym mogę pomóc?</h2>
-      <div class="service-grid">
-        <div>
-          <h3>Aplikacje Android</h3>
-          <p>Tworzenie prostych i praktycznych aplikacji mobilnych dla firm, pracowników lub klientów.</p>
         </div>
-        <div>
-          <h3>Systemy wewnętrzne</h3>
-          <p>Narzędzia do zarządzania zadaniami, komunikatami, flotą, dokumentacją i danymi.</p>
-        </div>
-        <div>
-          <h3>Bazy danych i synchronizacja</h3>
-          <p>SQLite, PostgreSQL, API, backupy, synchronizacja między wieloma urządzeniami.</p>
-        </div>
-        <div>
-          <h3>Automatyzacja procesów</h3>
-          <p>Uproszczenie powtarzalnych czynności i przeniesienie papierowych procesów do aplikacji.</p>
+        <div class="phone-preview">
+          <div class="phone-screen">
+            <p>PstrykList</p>
+            <span>✓ Zakupy</span>
+            <span>✓ Zadania</span>
+            <span>✓ Notatki</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="kontakt" class="section contact reveal">
-      <p class="eyebrow">Kontakt</p>
-      <h2>Masz pomysł na aplikację lub system?</h2>
-      <p>Napisz krótko, czego potrzebujesz. Przygotuję wstępną koncepcję i możliwy zakres prac.</p>
-      <a class="button primary" href="mailto:kontakt@nowinowski.pl">kontakt@nowinowski.pl</a>
-      <p class="small">Adres e-mail można później zmienić na właściwy po skonfigurowaniu poczty w domenie.</p>
+    <section id="services" class="section reveal">
+      <p class="section-label">Oferta</p>
+      <h2>W czym mogę pomóc</h2>
+      <div class="grid services-grid">
+        <div class="card">
+          <h3>Aplikacje mobilne</h3>
+          <p>Projektowanie i tworzenie aplikacji Android dopasowanych do konkretnych potrzeb.</p>
+        </div>
+        <div class="card">
+          <h3>Narzędzia dla firm</h3>
+          <p>Proste systemy wspierające organizację pracy, dane, zadania i procesy.</p>
+        </div>
+        <div class="card">
+          <h3>Backend i bazy danych</h3>
+          <p>API, synchronizacja danych oraz integracje z bazami SQLite i PostgreSQL.</p>
+        </div>
+        <div class="card">
+          <h3>Automatyzacja</h3>
+          <p>Rozwiązania, które ograniczają ręczną pracę i porządkują powtarzalne zadania.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section reveal contact-section">
+      <p class="section-label">Kontakt</p>
+      <h2>Porozmawiajmy o projekcie</h2>
+      <p>
+        Masz pomysł na aplikację lub narzędzie dla firmy? Napisz wiadomość i opisz, czego potrzebujesz.
+      </p>
+      <div class="buttons">
+        <a class="btn primary" href="mailto:jaroslawnowinkowski@gmail.com">Napisz e-mail</a>
+        <a class="btn secondary" href="https://github.com/NoviPL" target="_blank" rel="noopener">GitHub</a>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>© <span id="year"></span> Jarosław Nowinowski. Wszystkie prawa zastrzeżone.</p>
+  <footer class="footer">
+    <p>© <span id="year"></span> NoviPL — Jarosław Nowinkowski</p>
     <a href="polityka-prywatnosci.html">Polityka prywatności</a>
   </footer>
 
