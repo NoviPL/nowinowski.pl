@@ -3,136 +3,229 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NoviPL — aplikacje mobilne i oprogramowanie dla firm</title>
-  <meta name="description" content="NoviPL — tworzenie aplikacji mobilnych, narzędzi dla firm i rozwiązań automatyzujących codzienną pracę." />
+  <title>NoviPL — aplikacje mobilne i rozwiązania dla firm</title>
+  <meta name="description" content="NoviPL — aplikacje mobilne Android, proste narzędzia dla firm, backend, bazy danych i automatyzacja procesów." />
+  <meta name="theme-color" content="#0b1020" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="header">
-    <a class="logo" href="#top">NoviPL</a>
-    <nav class="nav">
+  <div class="background-glow"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="NoviPL — strona główna">
+      <span class="brand-mark">N</span>
+      <span>NoviPL</span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Otwórz menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav" aria-label="Nawigacja">
       <a href="#about">O mnie</a>
-      <a href="#projects">Projekty</a>
+      <a href="#projects">Portfolio</a>
       <a href="#services">Oferta</a>
+      <a href="#process">Proces</a>
       <a href="#contact">Kontakt</a>
     </nav>
   </header>
 
   <main id="top">
     <section class="hero section reveal">
-      <div class="hero-content">
-        <p class="eyebrow">Aplikacje mobilne • Backend • Automatyzacja</p>
-        <h1>Tworzę aplikacje, które rozwiązują realne problemy.</h1>
-        <p class="hero-text">
-          NoviPL to marka tworzona przez Jarosława Nowinkowskiego. Projektuję i rozwijam aplikacje mobilne oraz proste systemy wspierające codzienną pracę firm.
+      <div class="hero-copy">
+        <p class="eyebrow">Mobile apps • Backend • Automatyzacja</p>
+        <h1>Aplikacje i narzędzia, które porządkują codzienną pracę.</h1>
+        <p class="lead">
+          NoviPL to marka tworzona przez Jarosława Nowinkowskiego. Projektuję aplikacje mobilne oraz proste systemy, które pomagają firmom działać szybciej, czytelniej i wygodniej.
         </p>
-        <div class="buttons">
-          <a class="btn primary" href="#projects">Zobacz projekty</a>
-          <a class="btn secondary" href="#contact">Skontaktuj się</a>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">Zobacz portfolio</a>
+          <a class="btn btn-ghost" href="#contact">Porozmawiajmy</a>
+        </div>
+        <div class="trust-row" aria-label="Obszary pracy">
+          <span>Android</span>
+          <span>Flutter</span>
+          <span>Python</span>
+          <span>Bazy danych</span>
         </div>
       </div>
-      <div class="hero-card">
-        <span>Flutter</span>
-        <span>Dart</span>
-        <span>Python</span>
-        <span>FastAPI</span>
-        <span>PostgreSQL</span>
-        <span>SQLite</span>
-        <span>Linux</span>
-        <span>Android</span>
+
+      <div class="hero-panel" aria-label="Podgląd możliwości">
+        <div class="panel-top">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="panel-content">
+          <div class="status-card strong">
+            <p>Projekt</p>
+            <strong>PstrykList</strong>
+            <small>Aplikacja checklistowa Android</small>
+          </div>
+          <div class="mini-grid">
+            <div><strong>UI</strong><span>czytelny interfejs</span></div>
+            <div><strong>DB</strong><span>dane lokalne</span></div>
+            <div><strong>API</strong><span>gotowość do rozwoju</span></div>
+            <div><strong>Git</strong><span>wersjonowanie</span></div>
+          </div>
+          <div class="code-line">build → test → publish</div>
+        </div>
       </div>
     </section>
 
-    <section id="about" class="section reveal">
-      <p class="section-label">O mnie</p>
-      <h2>Nowoczesne rozwiązania bez zbędnego komplikowania.</h2>
-      <p class="wide-text">
-        Tworzę aplikacje mobilne na Androida oraz dedykowane narzędzia dla firm. Skupiam się na prostocie, czytelnym interfejsie, stabilności i praktycznym zastosowaniu. Każdy projekt traktuję jako rozwiązanie konkretnego problemu, a nie tylko jako sam kod.
-      </p>
+    <section id="about" class="section split reveal">
+      <div>
+        <p class="section-label">O mnie</p>
+        <h2>Praktyczne podejście do tworzenia oprogramowania.</h2>
+      </div>
+      <div class="text-stack">
+        <p>
+          Skupiam się na rozwiązaniach, które są proste w obsłudze i realnie przydatne. Aplikacja ma pomagać w pracy, a nie przeszkadzać użytkownikowi nadmiarem funkcji.
+        </p>
+        <p>
+          Tworzę projekty krok po kroku: od pomysłu, przez prototyp, testy na telefonie, aż po publikację lub wdrożenie w firmie.
+        </p>
+      </div>
     </section>
 
     <section class="section reveal">
       <p class="section-label">Technologie</p>
-      <h2>Narzędzia, z których korzystam</h2>
-      <div class="grid tech-grid">
-        <div class="card">Flutter</div>
-        <div class="card">Dart</div>
-        <div class="card">Python</div>
-        <div class="card">FastAPI</div>
-        <div class="card">PostgreSQL</div>
-        <div class="card">SQLite</div>
-        <div class="card">Git</div>
-        <div class="card">Linux</div>
+      <h2>Stos technologiczny</h2>
+      <div class="tech-cloud">
+        <span>Flutter</span>
+        <span>Dart</span>
+        <span>Android</span>
+        <span>Python</span>
+        <span>FastAPI</span>
+        <span>PostgreSQL</span>
+        <span>SQLite</span>
+        <span>Git</span>
+        <span>Linux</span>
+        <span>REST API</span>
       </div>
     </section>
 
     <section id="projects" class="section reveal">
-      <p class="section-label">Portfolio</p>
-      <h2>Projekty</h2>
-      <div class="project-card">
+      <div class="section-heading">
         <div>
-          <p class="project-tag">Aplikacja Android</p>
-          <h3>PstrykList</h3>
-          <p>
-            Prosta aplikacja checklistowa, która pomaga szybko tworzyć listy, odhaczać zadania i organizować codzienne obowiązki bez zbędnych funkcji.
-          </p>
-          <ul>
-            <li>czytelny interfejs,</li>
-            <li>szybkie dodawanie pozycji,</li>
-            <li>lokalne działanie na telefonie,</li>
-            <li>projekt przygotowany pod publikację w Google Play.</li>
-          </ul>
+          <p class="section-label">Portfolio</p>
+          <h2>Projekty publiczne</h2>
         </div>
-        <div class="phone-preview">
-          <div class="phone-screen">
-            <p>PstrykList</p>
-            <span>✓ Zakupy</span>
-            <span>✓ Zadania</span>
-            <span>✓ Notatki</span>
+        <p>
+          Portfolio będzie rozbudowywane wyłącznie o projekty, które mogą być publicznie pokazane.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card featured">
+          <div class="project-copy">
+            <p class="project-type">Aplikacja Android</p>
+            <h3>PstrykList</h3>
+            <p>
+              Lekka aplikacja checklistowa do szybkiego tworzenia list, odhaczania pozycji i organizowania codziennych spraw.
+            </p>
+            <ul class="clean-list">
+              <li>Szybkie dodawanie pozycji</li>
+              <li>Prosty, czytelny interfejs</li>
+              <li>Działanie lokalne na telefonie</li>
+              <li>Projekt przygotowywany pod Google Play</li>
+            </ul>
+            <div class="tag-row">
+              <span>Flutter</span>
+              <span>Dart</span>
+              <span>Android</span>
+            </div>
           </div>
-        </div>
+          <div class="phone-mockup" aria-label="Podgląd PstrykList">
+            <div class="phone-notch"></div>
+            <div class="phone-appbar">PstrykList</div>
+            <div class="check-item done">Kawa</div>
+            <div class="check-item done">Zakupy</div>
+            <div class="check-item">Zadanie na dziś</div>
+            <div class="check-item">Pomysł na aplikację</div>
+            <div class="phone-fab">+</div>
+          </div>
+        </article>
+
+        <article class="placeholder-card">
+          <span>02</span>
+          <h3>Kolejna aplikacja</h3>
+          <p>Miejsce na następny publiczny projekt do portfolio.</p>
+        </article>
+        <article class="placeholder-card">
+          <span>03</span>
+          <h3>Kolejna aplikacja</h3>
+          <p>Portfolio będzie rosło razem z nowymi realizacjami.</p>
+        </article>
+        <article class="placeholder-card">
+          <span>04</span>
+          <h3>Kolejna aplikacja</h3>
+          <p>Tu dodamy opis, screeny i link do publikacji.</p>
+        </article>
+        <article class="placeholder-card">
+          <span>05</span>
+          <h3>Kolejna aplikacja</h3>
+          <p>Po pięciu aplikacjach podepniemy domenę nowinowski.pl.</p>
+        </article>
       </div>
     </section>
 
     <section id="services" class="section reveal">
       <p class="section-label">Oferta</p>
-      <h2>W czym mogę pomóc</h2>
-      <div class="grid services-grid">
-        <div class="card">
+      <h2>Co mogę przygotować</h2>
+      <div class="cards-grid">
+        <article class="service-card">
+          <span class="icon">📱</span>
           <h3>Aplikacje mobilne</h3>
-          <p>Projektowanie i tworzenie aplikacji Android dopasowanych do konkretnych potrzeb.</p>
-        </div>
-        <div class="card">
+          <p>Aplikacje Android tworzone pod konkretny problem, proces lub pomysł biznesowy.</p>
+        </article>
+        <article class="service-card">
+          <span class="icon">🧩</span>
           <h3>Narzędzia dla firm</h3>
-          <p>Proste systemy wspierające organizację pracy, dane, zadania i procesy.</p>
-        </div>
-        <div class="card">
-          <h3>Backend i bazy danych</h3>
-          <p>API, synchronizacja danych oraz integracje z bazami SQLite i PostgreSQL.</p>
-        </div>
-        <div class="card">
+          <p>Systemy do porządkowania zadań, danych, zgłoszeń, list i codziennych procesów.</p>
+        </article>
+        <article class="service-card">
+          <span class="icon">🔌</span>
+          <h3>Backend i API</h3>
+          <p>Proste zaplecze serwerowe, komunikacja aplikacji z bazą danych i synchronizacja.</p>
+        </article>
+        <article class="service-card">
+          <span class="icon">⚙️</span>
           <h3>Automatyzacja</h3>
-          <p>Rozwiązania, które ograniczają ręczną pracę i porządkują powtarzalne zadania.</p>
-        </div>
+          <p>Rozwiązania ograniczające ręczną, powtarzalną pracę i poprawiające organizację.</p>
+        </article>
       </div>
     </section>
 
-    <section id="contact" class="section reveal contact-section">
+    <section id="process" class="section reveal">
+      <p class="section-label">Proces</p>
+      <h2>Jak pracuję nad projektem</h2>
+      <div class="timeline">
+        <div class="step"><span>01</span><strong>Pomysł</strong><p>Ustalenie celu aplikacji i najważniejszych funkcji.</p></div>
+        <div class="step"><span>02</span><strong>Prototyp</strong><p>Pierwsza działająca wersja do sprawdzenia na telefonie.</p></div>
+        <div class="step"><span>03</span><strong>Testy</strong><p>Poprawki, dopracowanie wygody obsługi i stabilności.</p></div>
+        <div class="step"><span>04</span><strong>Publikacja</strong><p>Przygotowanie do wdrożenia lub publikacji w sklepie.</p></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact reveal">
       <p class="section-label">Kontakt</p>
-      <h2>Porozmawiajmy o projekcie</h2>
+      <h2>Masz pomysł na aplikację?</h2>
       <p>
-        Masz pomysł na aplikację lub narzędzie dla firmy? Napisz wiadomość i opisz, czego potrzebujesz.
+        Opisz krótko, czego potrzebujesz. Odpowiem i pomogę uporządkować pomysł w konkretny plan działania.
       </p>
-      <div class="buttons">
-        <a class="btn primary" href="mailto:jaroslawnowinkowski@gmail.com">Napisz e-mail</a>
-        <a class="btn secondary" href="https://github.com/NoviPL" target="_blank" rel="noopener">GitHub</a>
+      <div class="contact-actions">
+        <a class="btn btn-primary" href="mailto:jaroslawnowinkowski@gmail.com">jaroslawnowinkowski@gmail.com</a>
+        <a class="btn btn-ghost" href="https://github.com/NoviPL" target="_blank" rel="noopener">GitHub NoviPL</a>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <p>© <span id="year"></span> NoviPL — Jarosław Nowinkowski</p>
-    <a href="polityka-prywatnosci.html">Polityka prywatności</a>
+    <div>
+      <a href="polityka-prywatnosci.html">Polityka prywatności</a>
+    </div>
   </footer>
 
   <script src="script.js"></script>
