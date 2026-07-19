@@ -22,3 +22,25 @@
 .business-points{display:flex;flex-wrap:wrap;gap:8px;margin-top:25px}
 .business-points span{padding:9px 12px;border:1px solid #3a3428;border-radius:999px;color:#d7c08a;background:#11130f;font-size:10px;font-weight:700}
 @media(max-width:760px){.about-profile-inner{grid-template-columns:1fr;padding:25px}.about-badges{grid-template-columns:1fr}.business-hero{padding:27px}.business-hero h2{font-size:34px}}
+
+/* HOTFIX ETAP 5 — O mnie / systemy dla firm */
+#o-mnie.wide-cta{display:none!important}
+#o-mnie-profil.about-profile{display:block!important;width:min(1300px,calc(100% - 48px))!important;max-width:1300px!important;margin:70px auto 24px!important;padding:0!important}
+#o-mnie-profil .about-profile-inner{display:grid!important;grid-template-columns:360px minmax(0,1fr)!important;gap:42px!important;align-items:start!important;padding:42px!important;border:1px solid #27313b!important;border-radius:24px!important;background:radial-gradient(circle at 12% 10%,rgba(230,173,47,.08),transparent 32%),linear-gradient(145deg,#0b151f,#060d14)!important}
+#o-mnie-profil .about-kicker{display:block!important;margin:0 0 18px!important;color:#e6ad2f!important;font-size:11px!important;font-weight:800!important;letter-spacing:.18em!important;line-height:1.4!important}
+#o-mnie-profil .about-badges{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:10px!important;margin:0!important}
+#o-mnie-profil .about-badge{display:flex!important;min-height:112px!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;padding:16px 10px!important;border:1px solid #3a3020!important;border-radius:14px!important;background:rgba(230,173,47,.05)!important;text-align:center!important}
+#o-mnie-profil .about-badge strong{display:block!important;color:#e6ad2f!important;font-family:Manrope,Inter,sans-serif!important;font-size:25px!important;font-weight:800!important;line-height:1!important}
+#o-mnie-profil .about-badge span{display:block!important;margin-top:8px!important;color:#aab2bb!important;font-size:9px!important;font-weight:700!important;letter-spacing:.09em!important;line-height:1.25!important}
+#o-mnie-profil .about-copy{min-width:0!important}
+#o-mnie-profil .about-copy h2{margin:0 0 18px!important;color:#f4f6f8!important;font-family:Manrope,Inter,sans-serif!important;font-size:clamp(30px,3.2vw,46px)!important;font-weight:800!important;line-height:1.1!important;letter-spacing:-.035em!important}
+#o-mnie-profil .about-copy p{margin:0!important;max-width:820px!important;color:#b4bcc5!important;font-size:14px!important;line-height:1.85!important}
+.business-intro{display:block!important;width:min(1300px,calc(100% - 48px))!important;max-width:1300px!important;margin:24px auto 0!important;padding:0!important}
+.business-intro .business-hero{display:block!important;padding:42px!important;border:1px solid #2d342f!important;border-radius:24px!important;background:radial-gradient(circle at 85% 20%,rgba(230,173,47,.10),transparent 35%),#08111a!important}
+.business-intro .eyebrow{display:block!important;margin:0 0 14px!important;color:#e6ad2f!important;font-size:11px!important;font-weight:800!important;letter-spacing:.15em!important}
+.business-intro h2{margin:0 0 16px!important;max-width:880px!important;color:#f4f6f8!important;font-family:Manrope,Inter,sans-serif!important;font-size:clamp(30px,3.5vw,48px)!important;font-weight:800!important;line-height:1.08!important;letter-spacing:-.04em!important}
+.business-intro p{margin:0!important;max-width:920px!important;color:#b4bcc5!important;font-size:14px!important;line-height:1.75!important}
+.business-points{display:flex!important;flex-wrap:wrap!important;gap:8px!important;margin:26px 0 0!important}
+.business-points span{display:inline-flex!important;align-items:center!important;min-height:34px!important;padding:8px 12px!important;border:1px solid #3a3428!important;border-radius:999px!important;background:#11130f!important;color:#d7c08a!important;font-size:10px!important;font-weight:700!important;line-height:1!important;white-space:nowrap!important}
+@media(max-width:900px){#o-mnie-profil .about-profile-inner{grid-template-columns:1fr!important;padding:30px!important}#o-mnie-profil .about-badges{max-width:520px!important}}
+@media(max-width:600px){#o-mnie-profil.about-profile,.business-intro{width:calc(100% - 28px)!important}#o-mnie-profil .about-profile-inner,.business-intro .business-hero{padding:24px!important}#o-mnie-profil .about-badges{grid-template-columns:1fr!important}#o-mnie-profil .about-badge{min-height:86px!important}.business-points span{white-space:normal!important}}
