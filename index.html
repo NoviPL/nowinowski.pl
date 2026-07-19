@@ -1,25 +1,62 @@
 <!doctype html>
-<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>NoviPL | Aplikacje mobilne</title>
-<link rel="stylesheet" href="style.css"></head>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="NoviPL — aplikacje mobilne i rozwiązania cyfrowe tworzone przez Jarosława Nowinowskiego.">
+<title>NoviPL — Aplikacje z pasją</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
 <body>
-<canvas id="bg"></canvas>
-<header class="hero">
-<nav><div class="logo">NoviPL</div><a href="#kontakt">Kontakt</a></nav>
-<div class="center">
-<h1>Tworzę aplikacje mobilne<br>i nowoczesne rozwiązania dla firm.</h1>
-<p>Flutter • Python • FastAPI • Android • Linux</p>
-<div class="buttons"><a href="#projekty" class="btn">Zobacz projekty</a><a href="#kontakt" class="btn ghost">Kontakt</a></div>
-</div>
+<header class="topbar">
+  <a href="#aplikacje" class="logo-wrap">
+    <div class="logo-n">N</div>
+    <div><strong id="brand">NoviPL</strong><span id="tagline">APLIKACJE Z PASJĄ</span></div>
+  </a>
+  <nav>
+    <a href="#o-mnie">O MNIE</a>
+    <a href="#aplikacje" class="active">APLIKACJE</a>
+    <a href="#uslugi">USŁUGI</a>
+    <a href="#technologie">TECHNOLOGIE</a>
+    <a href="#proces">PROCES</a>
+    <a href="#kontakt">KONTAKT</a>
+  </nav>
+  <a href="#kontakt" class="top-cta">◯ <span id="topCta">POROZMAWIAJMY</span></a>
 </header>
-<section id="projekty"><h2>Projekty</h2>
-<div class="card"><h3>PstrykList</h3><p>Minimalistyczna aplikacja do zarządzania checklistami.</p></div>
-<div class="placeholder">Miejsce na kolejne aplikacje…</div>
-<div class="placeholder">Miejsce na kolejne aplikacje…</div>
-<div class="placeholder">Miejsce na kolejne aplikacje…</div>
-<div class="placeholder">Miejsce na kolejne aplikacje…</div>
+
+<main>
+<section id="aplikacje" class="portfolio-shell">
+  <div class="portfolio-head">
+    <div>
+      <div class="eyebrow">● <span id="heroEyebrow">MOJE PROJEKTY</span></div>
+      <h1><span id="heroBefore">Aplikacje, które </span><em id="heroHighlight">rozwiązują</em><span id="heroAfter"> realne problemy</span></h1>
+      <p id="heroSubtitle">Każda aplikacja to setki godzin pracy, testów i dopracowania detali.</p>
+    </div>
+    <div class="demo-note">
+      <div class="shield">✓</div>
+      <div><strong>Dane demonstracyjne</strong><span>Wszystkie dane są fikcyjne i służą tylko do celów prezentacyjnych.</span></div>
+    </div>
+  </div>
+  <div id="projectGrid" class="project-grid"></div>
 </section>
-<section><h2>Technologie</h2><div class="tech">Flutter • Dart • Python • FastAPI • PostgreSQL • SQLite • Git • Linux</div></section>
-<section id="kontakt"><h2>Masz pomysł?</h2><p>Zbudujmy go razem.</p><a class="btn" href="mailto:jaroslawnowinkowski@gmail.com">Napisz do mnie</a></section>
-<footer>© 2026 NoviPL</footer>
-<script src="script.js"></script></body></html>
+
+<section id="o-mnie" class="wide-cta">
+  <div class="star">☆</div>
+  <div><h2 id="aboutTitle">Tworzę aplikacje, które mają znaczenie</h2><p id="aboutText">Od pomysłu, przez projekt i development, aż po wdrożenie i wsparcie.</p></div>
+  <div class="value-points"><span>♙<small>Indywidualne<br>podejście</small></span><span>‹/›<small>Wysoka<br>jakość kodu</small></span><span>◫<small>Terminowość<br>i komunikacja</small></span><span>☏<small>Wsparcie<br>po wdrożeniu</small></span></div>
+  <a href="#kontakt" class="cta-gold">POROZMAWIAJMY O TWOIM PROJEKCIE ›</a>
+</section>
+
+<section id="uslugi" class="content-section"><div class="section-title"><span>USŁUGI</span><h2>Od pomysłu do gotowego produktu.</h2></div><div id="servicesGrid" class="services-grid"></div></section>
+<section id="technologie" class="tech-section"><span>TECHNOLOGIE</span><div id="techGrid"></div></section>
+<section id="proces" class="content-section"><div class="section-title"><span>PROCES</span><h2>Jasny proces. Konkretny efekt.</h2></div><div id="processGrid" class="process-grid"></div></section>
+<section id="kontakt" class="contact-section"><p>MASZ POMYSŁ ALBO PROBLEM DO ROZWIĄZANIA?</p><h2>Zbudujmy coś, co naprawdę będzie używane.</h2><a id="mailLink" href="mailto:kontakt@nowinowski.pl">kontakt@nowinowski.pl</a></section>
+</main>
+
+<footer><span>© <span id="year"></span> NoviPL — Aplikacje z pasją</span><a href="polityka-prywatnosci.html">Polityka prywatności</a><a href="admin/">Panel administratora</a></footer>
+<script type="module" src="script.js"></script>
+</body>
+</html>

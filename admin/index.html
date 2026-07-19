@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NoviPL Admin</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<div id="loginView" class="login-view">
+  <form id="loginForm" class="login-card">
+    <div class="login-logo">N</div>
+    <h1>NoviPL Admin</h1>
+    <p>Zaloguj się kontem administratora.</p>
+    <label>E-mail<input id="loginEmail" type="email" required autocomplete="username"></label>
+    <label>Hasło<input id="loginPassword" type="password" required autocomplete="current-password"></label>
+    <button type="submit">Zaloguj</button>
+    <div id="loginError" class="error"></div>
+  </form>
+</div>
+
+<div id="adminView" hidden>
+<header><div><b>NoviPL</b><span>Panel administratora</span></div><div class="head-actions"><span id="userEmail"></span><a href="../index.html" target="_blank">Otwórz stronę ↗</a><button id="logoutBtn">Wyloguj</button></div></header>
+<main>
+<aside>
+  <button data-tab="general" class="active">Treści główne</button>
+  <button data-tab="projects">Aplikacje</button>
+  <button data-tab="services">Usługi</button>
+  <button data-tab="process">Proces</button>
+  <button data-tab="tech">Technologie</button>
+  <hr>
+  <button id="exportBtn">Eksport JSON</button>
+  <label class="import">Import JSON<input type="file" id="importFile" accept=".json"></label>
+</aside>
+<section>
+  <div class="top-actions">
+    <div><h1>Edycja treści</h1><p>Zmiany zapisują się bezpośrednio w Firestore i są widoczne publicznie po odświeżeniu strony. Screeny dodajesz jako ścieżki plików z repozytorium lub publiczne URL.</p></div>
+    <button id="saveBtn">Opublikuj zmiany</button>
+  </div>
+  <div id="statusBar" class="statusbar">Gotowy.</div>
+  <div id="editor"></div>
+</section>
+</main>
+</div>
+<script type="module" src="admin.js"></script>
+</body></html>

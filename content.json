@@ -1,0 +1,152 @@
+{
+  "site": {
+    "brand": "NoviPL",
+    "tagline": "APLIKACJE Z PASJĄ",
+    "email": "kontakt@nowinowski.pl",
+    "cta": "POROZMAWIAJMY"
+  },
+  "hero": {
+    "eyebrow": "MOJE PROJEKTY",
+    "title_before": "Aplikacje, które ",
+    "title_highlight": "rozwiązują",
+    "title_after": " realne problemy",
+    "subtitle": "Każda aplikacja to setki godzin pracy, testów i dopracowania detali."
+  },
+  "about": {
+    "title": "Tworzę aplikacje, które mają znaczenie",
+    "text": "Od pomysłu, przez projekt i development, aż po wdrożenie i wsparcie."
+  },
+  "projects": [
+    {
+      "name": "Peek",
+      "theme": "gold",
+      "description": "Zagadki, ciekawostki i treści, które dają chwilę rozrywki i trening dla umysłu.",
+      "features": [
+        "5 kategorii: Dla Ciebie, Zagadki, Ciekawostki, Humor, Motywacja",
+        "Ponad 1000 zagadek i ciekawostek",
+        "System ocen i rekomendacji",
+        "Tryb offline – działaj bez internetu"
+      ],
+      "tech": [
+        "Flutter",
+        "Firebase",
+        "Cloud Firestore",
+        "Firebase Storage"
+      ],
+      "screens": [
+        "assets/screens/peek-quiz.jpg",
+        "assets/screens/peek-fact.jpg",
+        "assets/screens/peek-math.jpg"
+      ]
+    },
+    {
+      "name": "FuseMap",
+      "theme": "green",
+      "description": "Profesjonalna dokumentacja instalacji elektrycznych.",
+      "features": [
+        "Instalacje, rozdzielnie, obwody, odbiorniki",
+        "Interaktywny schemat instalacji",
+        "Eksport profesjonalnych PDF",
+        "Zdjęcia, notatki, podpisy i opisy"
+      ],
+      "tech": [
+        "Flutter",
+        "SQLite",
+        "PDF",
+        "Image Picker"
+      ],
+      "screens": [
+        "assets/screens/fusemap-portfolio-1.jpg",
+        "assets/screens/fusemap-portfolio-2.jpg"
+      ]
+    },
+    {
+      "name": "AutoKronika",
+      "theme": "blue",
+      "description": "Kompletna historia Twojego samochodu w jednym miejscu.",
+      "features": [
+        "Historia serwisowa i tankowań",
+        "Koszty eksploatacji i statystyki",
+        "Dokumenty i zdjęcia",
+        "Przypomnienia i ocena stanu pojazdu"
+      ],
+      "tech": [
+        "Flutter",
+        "SQLite",
+        "PDF",
+        "Image Picker"
+      ],
+      "screens": [
+        "assets/screens/autokronika-portfolio-1.jpg",
+        "assets/screens/autokronika-portfolio-2.jpg",
+        "assets/screens/autokronika-portfolio-3.jpg"
+      ]
+    },
+    {
+      "name": "PstrykList",
+      "theme": "purple",
+      "description": "Proste i wygodne listy zadań na co dzień.",
+      "features": [
+        "Własne kategorie i listy",
+        "Proste dodawanie zadań",
+        "Postęp i statystyki",
+        "Tryb ciemny i jasny"
+      ],
+      "tech": [
+        "Flutter",
+        "SQLite",
+        "Local Storage"
+      ],
+      "screens": [
+        "assets/screens/pstryk-portfolio-1.jpg",
+        "assets/screens/pstryk-portfolio-2.jpg"
+      ]
+    }
+  ],
+  "services": [
+    {
+      "title": "Aplikacje mobilne",
+      "text": "Projektowanie i budowa aplikacji na Androida — od pierwszego ekranu po wersję release."
+    },
+    {
+      "title": "Narzędzia dla firm",
+      "text": "Dedykowane systemy, dokumentacja, synchronizacja i rozwiązania usprawniające codzienną pracę."
+    },
+    {
+      "title": "Offline & Cloud",
+      "text": "SQLite, Firebase, API i architektura dopasowana do realnych warunków działania produktu."
+    },
+    {
+      "title": "Rozwój produktu",
+      "text": "Porządkowanie aplikacji, poprawa UX, nowe funkcje i przygotowanie do publikacji."
+    }
+  ],
+  "process": [
+    {
+      "title": "Rozpoznanie",
+      "text": "Najpierw problem, użytkownik i cel."
+    },
+    {
+      "title": "Projekt",
+      "text": "Układam funkcje, przepływy i wygląd produktu."
+    },
+    {
+      "title": "Development",
+      "text": "Buduję działające etapy i regularnie je weryfikuję."
+    },
+    {
+      "title": "Testy i release",
+      "text": "Stabilizacja, testy na urządzeniach i przygotowanie finalnej wersji."
+    }
+  ],
+  "tech": [
+    "Flutter",
+    "Dart",
+    "Python",
+    "FastAPI",
+    "PostgreSQL",
+    "SQLite",
+    "Firebase",
+    "Git"
+  ]
+}
