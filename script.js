@@ -4,62 +4,99 @@ const DEFAULT_CONTENT = {"site": {"brand": "NoviPL", "tagline": "APLIKACJE Z PAS
 
 async function loadContent() {
   if (!FIREBASE_ENABLED) return structuredClone(DEFAULT_CONTENT);
+
   try {
     const [appMod, fsMod] = await Promise.all([
       import('https://www.gstatic.com/firebasejs/12.16.0/firebase-app.js'),
       import('https://www.gstatic.com/firebasejs/12.16.0/firebase-firestore.js')
     ]);
+
     const app = appMod.initializeApp(firebaseConfig);
     const db = fsMod.getFirestore(app);
     const snap = await fsMod.getDoc(fsMod.doc(db, 'site', 'content'));
+
     if (snap.exists()) return snap.data();
-  } catch (e) {
-    console.warn('Firebase unavailable, using bundled content.', e);
+  } catch (error) {
+    console.warn('Firebase niedostępny — używam treści wbudowanej.', error);
   }
+
   return structuredClone(DEFAULT_CONTENT);
 }
 
-function esc(s='') {
-  return String(s).replace(/[&<>"']/g, m => ({
-    '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
-  }[m]));
+function esc(value = '') {
+  return String(value)
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;')
+    .replaceAll("'", '&#39;');
 }
 
-function renderProject(p) {
-  const icons={gold:'◉',green:'♜',blue:'▣',purple:'✓'};
-  const phones=(p.screens||[]).map((s,i)=>
-    `<div class="mini-phone"><img src="${esc(s)}" alt="${esc(p.name)} — ekran ${i+1}"></div>`
-  ).join('');
-  return `<article class="project-card ${esc(p.theme||'gold')}">
-    <header><div class="app-icon">${icons[p.theme]||'●'}</div>
-    <div><h3>${esc(p.name)}</h3><div class="desc">${esc(p.description)}</div></div></header>
-    <div class="phones">${phones}</div>
-    <ul>${(p.features||[]).map(x=>`<li>${esc(x)}</li>`).join('')}</ul>
-    <div class="techchips">${(p.tech||[]).map(x=>`<span>${esc(x)}</span>`).join('')}</div>
-  </article>`;
+function renderProject(project) {
+  const icons = { gold: '◉', green: '♜', blue: '▣', purple: '✓' };
+
+  const phones = (project.screens || []).map((src, index) => `
+    <div class="mini-phone">
+      <img src="${esc(src)}" alt="${esc(project.name)} — ekran ${index + 1}">
+    </div>
+  `).join('');
+
+  return `
+    <article class="project-card ${esc(project.theme || 'gold')}">
+      <header>
+        <div class="app-icon">${icons[project.theme] || '●'}</div>
+        <div>
+          <h3>${esc(project.name)}</h3>
+          <div class="desc">${esc(project.description)}</div>
+        </div>
+      </header>
+      <div class="phones">${phones}</div>
+      <ul>${(project.features || []).map(item => `<li>${esc(item)}</li>`).join('')}</ul>
+      <div class="techchips">${(project.tech || []).map(item => `<span>${esc(item)}</span>`).join('')}</div>
+    </article>
+  `;
 }
 
-(async()=>{
-  const c=await loadContent();
-  document.getElementById('brand').textContent=c.site.brand;
-  document.getElementById('tagline').textContent=c.site.tagline;
-  document.getElementById('topCta').textContent=c.site.cta;
-  document.getElementById('heroEyebrow').textContent=c.hero.eyebrow;
-  document.getElementById('heroBefore').textContent=c.hero.title_before;
-  document.getElementById('heroHighlight').textContent=c.hero.title_highlight;
-  document.getElementById('heroAfter').textContent=c.hero.title_after;
-  document.getElementById('heroSubtitle').textContent=c.hero.subtitle;
-  document.getElementById('aboutTitle').textContent=c.about.title;
-  document.getElementById('aboutText').textContent=c.about.text;
-  document.getElementById('projectGrid').innerHTML=c.projects.map(renderProject).join('');
-  document.getElementById('servicesGrid').innerHTML=c.services.map((x,i)=>
-    `<article class="service"><span>0${i+1}</span><h3>${esc(x.title)}</h3><p>${esc(x.text)}</p></article>`
-  ).join('');
-  document.getElementById('processGrid').innerHTML=c.process.map((x,i)=>
-    `<article class="process-item"><span>0${i+1}</span><h3>${esc(x.title)}</h3><p>${esc(x.text)}</p></article>`
-  ).join('');
-  document.getElementById('techGrid').innerHTML=c.tech.map(x=>`<span>${esc(x)}</span>`).join('');
-  const mail=document.getElementById('mailLink');
-  mail.textContent=c.site.email; mail.href='mailto:'+c.site.email;
-  document.getElementById('year').textContent=new Date().getFullYear();
+(async function initPage() {
+  const c = await loadContent();
+
+  document.getElementById('brand').textContent = c.site.brand;
+  document.getElementById('tagline').textContent = c.site.tagline;
+  document.getElementById('topCta').textContent = c.site.cta;
+
+  document.getElementById('heroEyebrow').textContent = c.hero.eyebrow;
+  document.getElementById('heroBefore').textContent = c.hero.title_before;
+  document.getElementById('heroHighlight').textContent = c.hero.title_highlight;
+  document.getElementById('heroAfter').textContent = c.hero.title_after;
+  document.getElementById('heroSubtitle').textContent = c.hero.subtitle;
+
+  document.getElementById('aboutTitle').textContent = c.about.title;
+  document.getElementById('aboutText').textContent = c.about.text;
+
+  document.getElementById('projectGrid').innerHTML = c.projects.map(renderProject).join('');
+
+  document.getElementById('servicesGrid').innerHTML = c.services.map((item, i) => `
+    <article class="service">
+      <span>0${i + 1}</span>
+      <h3>${esc(item.title)}</h3>
+      <p>${esc(item.text)}</p>
+    </article>
+  `).join('');
+
+  document.getElementById('processGrid').innerHTML = c.process.map((item, i) => `
+    <article class="process-item">
+      <span>0${i + 1}</span>
+      <h3>${esc(item.title)}</h3>
+      <p>${esc(item.text)}</p>
+    </article>
+  `).join('');
+
+  document.getElementById('techGrid').innerHTML =
+    c.tech.map(item => `<span>${esc(item)}</span>`).join('');
+
+  const mailLink = document.getElementById('mailLink');
+  mailLink.textContent = c.site.email;
+  mailLink.href = `mailto:${c.site.email}`;
+
+  document.getElementById('year').textContent = new Date().getFullYear();
 })();
