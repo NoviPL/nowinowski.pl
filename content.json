@@ -6,15 +6,15 @@
     "cta": "POROZMAWIAJMY"
   },
   "hero": {
-    "eyebrow": "MOJE PROJEKTY",
-    "title_before": "Aplikacje, które ",
+    "eyebrow": "APLIKACJE MOBILNE • SYSTEMY DLA FIRM",
+    "title_before": "Tworzę aplikacje, które ",
     "title_highlight": "rozwiązują",
     "title_after": " realne problemy",
-    "subtitle": "Każda aplikacja to setki godzin pracy, testów i dopracowania detali."
+    "subtitle": "Od autorskich aplikacji mobilnych po personalizowane systemy do zarządzania pracą w firmach. Projektuję rozwiązania dopasowane do ludzi, procesów i codziennych wyzwań."
   },
   "about": {
-    "title": "Tworzę aplikacje, które mają znaczenie",
-    "text": "Od pomysłu, przez projekt i development, aż po wdrożenie i wsparcie."
+    "title": "33 lata. Tata córeczki. Z technologią związany praktycznie od zawsze.",
+    "text": "Branża IT towarzyszy mi przez większość życia. Choć moja aktywność zawodowa w tym świecie miała swoje przerwy, zainteresowanie technologią, programowaniem i tworzeniem własnych rozwiązań nigdy nie zniknęło. Dziś wykorzystuję doświadczenie, ciekawość i nowe możliwości technologiczne, żeby budować aplikacje, które faktycznie mają zastosowanie. Lubię zaczynać od prawdziwej potrzeby, znaleźć rozwiązanie, zbudować je, przetestować i doprowadzić do momentu, w którym naprawdę działa. Prywatnie jestem tatą córeczki — i to właśnie ona jest jedną z moich największych motywacji, żeby rozwijać się, budować coś własnego i każdego dnia iść krok dalej."
   },
   "projects": [
     {
@@ -22,16 +22,15 @@
       "theme": "gold",
       "description": "Zagadki, ciekawostki i treści, które dają chwilę rozrywki i trening dla umysłu.",
       "features": [
-        "5 kategorii: Dla Ciebie, Zagadki, Ciekawostki, Humor, Motywacja",
-        "Ponad 1000 zagadek i ciekawostek",
+        "5 kategorii treści",
+        "Rozbudowana baza zagadek i ciekawostek",
         "System ocen i rekomendacji",
-        "Tryb offline – działaj bez internetu"
+        "Treści projektowane z myślą o szybkim, wygodnym odbiorze"
       ],
       "tech": [
         "Flutter",
         "Firebase",
-        "Cloud Firestore",
-        "Firebase Storage"
+        "Cloud Firestore"
       ],
       "screens": [
         "assets/screens/peek-quiz.jpg",
@@ -42,18 +41,17 @@
     {
       "name": "FuseMap",
       "theme": "green",
-      "description": "Profesjonalna dokumentacja instalacji elektrycznych.",
+      "description": "Profesjonalne narzędzie do tworzenia i porządkowania dokumentacji instalacji elektrycznych.",
       "features": [
-        "Instalacje, rozdzielnie, obwody, odbiorniki",
+        "Instalacje, rozdzielnice, obwody i odbiorniki",
         "Interaktywny schemat instalacji",
-        "Eksport profesjonalnych PDF",
-        "Zdjęcia, notatki, podpisy i opisy"
+        "Eksport profesjonalnych dokumentów PDF",
+        "Zdjęcia, notatki i dokumentacja techniczna"
       ],
       "tech": [
         "Flutter",
         "SQLite",
-        "PDF",
-        "Image Picker"
+        "PDF"
       ],
       "screens": [
         "assets/screens/fusemap-portfolio-1.jpg",
@@ -63,18 +61,17 @@
     {
       "name": "AutoKronika",
       "theme": "blue",
-      "description": "Kompletna historia Twojego samochodu w jednym miejscu.",
+      "description": "Historia samochodu, serwisu i kosztów eksploatacji uporządkowana w jednej aplikacji.",
       "features": [
-        "Historia serwisowa i tankowań",
+        "Historia serwisowa i tankowania",
         "Koszty eksploatacji i statystyki",
         "Dokumenty i zdjęcia",
-        "Przypomnienia i ocena stanu pojazdu"
+        "Czytelna historia pojazdu"
       ],
       "tech": [
         "Flutter",
         "SQLite",
-        "PDF",
-        "Image Picker"
+        "PDF"
       ],
       "screens": [
         "assets/screens/autokronika-portfolio-1.jpg",
@@ -85,12 +82,12 @@
     {
       "name": "PstrykList",
       "theme": "purple",
-      "description": "Proste i wygodne listy zadań na co dzień.",
+      "description": "Proste i wygodne listy zadań stworzone z myślą o codziennym użytkowaniu.",
       "features": [
         "Własne kategorie i listy",
-        "Proste dodawanie zadań",
-        "Postęp i statystyki",
-        "Tryb ciemny i jasny"
+        "Szybkie dodawanie zadań",
+        "Postęp realizacji",
+        "Prosty interfejs bez zbędnych funkcji"
       ],
       "tech": [
         "Flutter",
@@ -105,38 +102,54 @@
   ],
   "services": [
     {
-      "title": "Aplikacje mobilne",
-      "text": "Projektowanie i budowa aplikacji na Androida — od pierwszego ekranu po wersję release."
+      "title": "Personalizowane aplikacje dla firm",
+      "text": "Tworzę dedykowane aplikacje do zarządzania codzienną pracą firmy — dopasowane do jej procesów zamiast zmuszania zespołu do pracy według gotowego, uniwersalnego systemu."
     },
     {
-      "title": "Narzędzia dla firm",
-      "text": "Dedykowane systemy, dokumentacja, synchronizacja i rozwiązania usprawniające codzienną pracę."
+      "title": "Zadania i obieg pracy",
+      "text": "Zadania, statusy, kategorie, terminy, przypisania, notatki, załączniki i historia zmian — uporządkowane w jednym miejscu."
     },
     {
-      "title": "Offline & Cloud",
-      "text": "SQLite, Firebase, API i architektura dopasowana do realnych warunków działania produktu."
+      "title": "Zespół, role i uprawnienia",
+      "text": "Konta użytkowników, poziomy dostępu, role administratorów i pracowników oraz kontrola tego, kto może przeglądać i modyfikować konkretne dane."
     },
     {
-      "title": "Rozwój produktu",
-      "text": "Porządkowanie aplikacji, poprawa UX, nowe funkcje i przygotowanie do publikacji."
+      "title": "Dane, dokumenty i zdjęcia",
+      "text": "Centralne miejsce na dokumentację, zdjęcia, pliki, opisy i informacje związane z projektami, zleceniami, klientami, sprzętem lub innymi elementami działalności."
+    },
+    {
+      "title": "Komunikacja wewnętrzna",
+      "text": "Komunikaty dla zespołu, ważne informacje, potwierdzenia przeczytania i uporządkowany przepływ informacji bez szukania ich w wielu różnych kanałach."
+    },
+    {
+      "title": "Flota, sprzęt i terminy",
+      "text": "Ewidencja pojazdów lub wyposażenia, terminy przeglądów, ubezpieczeń i serwisów, notatki, zgłoszenia usterek oraz dokumentacja zdjęciowa."
+    },
+    {
+      "title": "Synchronizacja i praca offline",
+      "text": "Rozwiązania mogą działać także przy słabym lub chwilowo niedostępnym internecie, a dane synchronizować się z centralnym systemem po odzyskaniu połączenia."
+    },
+    {
+      "title": "Raporty, backup i rozwój",
+      "text": "Eksport danych i raportów, kopie bezpieczeństwa, historia operacji oraz możliwość dalszej rozbudowy systemu wraz z rozwojem firmy."
     }
   ],
   "process": [
     {
-      "title": "Rozpoznanie",
-      "text": "Najpierw problem, użytkownik i cel."
+      "title": "Rozpoznanie potrzeb",
+      "text": "Poznaję sposób działania firmy, problemy i procesy, które warto uprościć lub przenieść do jednej aplikacji."
     },
     {
-      "title": "Projekt",
-      "text": "Układam funkcje, przepływy i wygląd produktu."
+      "title": "Projekt rozwiązania",
+      "text": "Układam funkcje, role użytkowników, przepływ danych i interfejs tak, aby system pasował do rzeczywistej pracy zespołu."
     },
     {
-      "title": "Development",
-      "text": "Buduję działające etapy i regularnie je weryfikuję."
+      "title": "Development i testy",
+      "text": "Buduję kolejne działające etapy, testuję je na urządzeniach i poprawiam na podstawie realnego użytkowania."
     },
     {
-      "title": "Testy i release",
-      "text": "Stabilizacja, testy na urządzeniach i przygotowanie finalnej wersji."
+      "title": "Wdrożenie i rozwój",
+      "text": "Przygotowuję finalną wersję, wdrożenie oraz możliwość dalszego rozwijania aplikacji, gdy pojawią się nowe potrzeby."
     }
   ],
   "tech": [
