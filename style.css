@@ -77,3 +77,60 @@
 #wartosci.wide-cta{display:grid!important}
 @media(max-width:900px){#o-mnie .about-profile-inner{grid-template-columns:1fr!important;padding:30px!important}#o-mnie .about-badges{max-width:520px!important}}
 @media(max-width:600px){#o-mnie.about-profile{width:calc(100% - 28px)!important}#o-mnie .about-profile-inner{padding:24px!important}#o-mnie .about-badges{grid-template-columns:1fr!important}#o-mnie .about-badge{min-height:86px!important}}
+
+
+/* ===== FINAL ALL-IN-ONE POLISH ===== */
+.about-copy p{white-space:pre-line}
+.menu-toggle{display:none;background:transparent;border:1px solid #303a45;color:#f4f6f8;border-radius:9px;width:42px;height:42px;font-size:20px;cursor:pointer}
+.project-card{transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}
+.project-card:hover{transform:translateY(-4px);box-shadow:0 24px 60px rgba(0,0,0,.30)}
+.mini-phone{transition:transform .28s ease}
+.project-card:hover .mini-phone:nth-child(1){transform:translateY(-4px)}
+.project-card:hover .mini-phone:nth-child(2){transform:translateY(-1px)}
+.project-card:hover .mini-phone:nth-child(3){transform:translateY(2px)}
+.service,.process-item{transition:transform .22s ease,border-color .22s ease}
+.service:hover,.process-item:hover{transform:translateY(-3px);border-color:#3a4652}
+
+.contact-pro{max-width:1300px;margin:100px auto;padding:50px 24px;display:grid;grid-template-columns:.9fr 1.1fr;gap:54px;align-items:start}
+.contact-copy{padding:25px 0}
+.contact-eyebrow{color:var(--gold);font-size:11px;font-weight:800;letter-spacing:.17em}
+.contact-copy h2{font:800 clamp(38px,5vw,68px)/1.02 Manrope;margin:16px 0 22px;letter-spacing:-.055em}
+.contact-copy>p:not(.contact-eyebrow){color:#aeb7c1;line-height:1.75;max-width:560px}
+.contact-direct{margin-top:45px;padding-top:25px;border-top:1px solid #202b35;display:flex;flex-direction:column;align-items:flex-start;gap:8px}
+.contact-direct span{font-size:9px;letter-spacing:.16em;color:#7f8b96}
+.contact-direct a{font-size:22px;font-weight:800;color:var(--gold)}
+.contact-direct small{color:#8f9aa5;line-height:1.5;max-width:500px}
+.contact-form{padding:30px;border:1px solid #27333e;border-radius:22px;background:linear-gradient(145deg,#0b151f,#070e15);box-shadow:0 30px 70px rgba(0,0,0,.18)}
+.contact-form label{display:flex;flex-direction:column;gap:8px;margin-bottom:16px;color:#aeb7c0;font-size:11px;font-weight:700}
+.contact-form input,.contact-form select,.contact-form textarea{width:100%;padding:13px 14px;border:1px solid #2b3844;border-radius:10px;background:#050b12;color:#f4f6f8;font:13px Inter;outline:none}
+.contact-form input:focus,.contact-form select:focus,.contact-form textarea:focus{border-color:#9e7b30;box-shadow:0 0 0 3px rgba(230,173,47,.07)}
+.contact-form textarea{resize:vertical;min-height:125px}
+.contact-form select{appearance:auto}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.contact-form button{width:100%;padding:15px 20px;border:0;border-radius:11px;background:linear-gradient(180deg,#f1c75d,#dfa733);color:#111;font-weight:800;cursor:pointer;transition:transform .2s ease}
+.contact-form button:hover{transform:translateY(-2px)}
+.form-note{margin:12px 0 0;color:#74808c;font-size:10px;line-height:1.5}
+.reveal-auto{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}
+.reveal-auto.is-visible{opacity:1;transform:none}
+
+@media(max-width:1200px){
+  .services-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:760px){
+  .topbar{grid-template-columns:1fr auto auto;gap:8px}
+  .menu-toggle{display:block}
+  .topbar nav{position:absolute;top:64px;left:12px;right:12px;display:none!important;flex-direction:column;gap:0;padding:10px;background:#071019;border:1px solid #27323d;border-radius:14px;box-shadow:0 22px 55px rgba(0,0,0,.5)}
+  .topbar nav.open{display:flex!important}
+  .topbar nav a{padding:13px 14px;border:0!important}
+  .top-cta{display:none}
+  .contact-pro{grid-template-columns:1fr;margin:55px auto;padding:30px 18px;gap:22px}
+  .contact-copy{padding:0}
+  .contact-form{padding:22px}
+  .form-row{grid-template-columns:1fr}
+  .services-grid{grid-template-columns:1fr}
+  .project-card:hover{transform:none}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*:before,*:after{transition:none!important;animation:none!important}
+}

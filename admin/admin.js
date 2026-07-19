@@ -1,6 +1,12 @@
 import { firebaseConfig, FIREBASE_ENABLED } from '../firebase-config.js';
 
-const DEFAULT_CONTENT = {"site": {"brand": "NoviPL", "tagline": "APLIKACJE Z PASJĄ", "email": "kontakt@nowinowski.pl", "cta": "POROZMAWIAJMY"}, "hero": {"eyebrow": "MOJE PROJEKTY", "title_before": "Aplikacje, które ", "title_highlight": "rozwiązują", "title_after": " realne problemy", "subtitle": "Każda aplikacja to setki godzin pracy, testów i dopracowania detali."}, "about": {"title": "Tworzę aplikacje, które mają znaczenie", "text": "Od pomysłu, przez projekt i development, aż po wdrożenie i wsparcie."}, "projects": [{"name": "Peek", "theme": "gold", "description": "Zagadki, ciekawostki i treści, które dają chwilę rozrywki i trening dla umysłu.", "features": ["5 kategorii: Dla Ciebie, Zagadki, Ciekawostki, Humor, Motywacja", "Ponad 1000 zagadek i ciekawostek", "System ocen i rekomendacji", "Tryb offline – działaj bez internetu"], "tech": ["Flutter", "Firebase", "Cloud Firestore", "Firebase Storage"], "screens": ["assets/screens/peek-quiz.jpg", "assets/screens/peek-fact.jpg", "assets/screens/peek-math.jpg"]}, {"name": "FuseMap", "theme": "green", "description": "Profesjonalna dokumentacja instalacji elektrycznych.", "features": ["Instalacje, rozdzielnie, obwody, odbiorniki", "Interaktywny schemat instalacji", "Eksport profesjonalnych PDF", "Zdjęcia, notatki, podpisy i opisy"], "tech": ["Flutter", "SQLite", "PDF", "Image Picker"], "screens": ["assets/screens/fusemap-portfolio-1.jpg", "assets/screens/fusemap-portfolio-2.jpg"]}, {"name": "AutoKronika", "theme": "blue", "description": "Kompletna historia Twojego samochodu w jednym miejscu.", "features": ["Historia serwisowa i tankowań", "Koszty eksploatacji i statystyki", "Dokumenty i zdjęcia", "Przypomnienia i ocena stanu pojazdu"], "tech": ["Flutter", "SQLite", "PDF", "Image Picker"], "screens": ["assets/screens/autokronika-portfolio-1.jpg", "assets/screens/autokronika-portfolio-2.jpg", "assets/screens/autokronika-portfolio-3.jpg"]}, {"name": "PstrykList", "theme": "purple", "description": "Proste i wygodne listy zadań na co dzień.", "features": ["Własne kategorie i listy", "Proste dodawanie zadań", "Postęp i statystyki", "Tryb ciemny i jasny"], "tech": ["Flutter", "SQLite", "Local Storage"], "screens": ["assets/screens/pstryk-portfolio-1.jpg", "assets/screens/pstryk-portfolio-2.jpg"]}], "services": [{"title": "Aplikacje mobilne", "text": "Projektowanie i budowa aplikacji na Androida — od pierwszego ekranu po wersję release."}, {"title": "Narzędzia dla firm", "text": "Dedykowane systemy, dokumentacja, synchronizacja i rozwiązania usprawniające codzienną pracę."}, {"title": "Offline & Cloud", "text": "SQLite, Firebase, API i architektura dopasowana do realnych warunków działania produktu."}, {"title": "Rozwój produktu", "text": "Porządkowanie aplikacji, poprawa UX, nowe funkcje i przygotowanie do publikacji."}], "process": [{"title": "Rozpoznanie", "text": "Najpierw problem, użytkownik i cel."}, {"title": "Projekt", "text": "Układam funkcje, przepływy i wygląd produktu."}, {"title": "Development", "text": "Buduję działające etapy i regularnie je weryfikuję."}, {"title": "Testy i release", "text": "Stabilizacja, testy na urządzeniach i przygotowanie finalnej wersji."}], "tech": ["Flutter", "Dart", "Python", "FastAPI", "PostgreSQL", "SQLite", "Firebase", "Git"]};
+const DEFAULT_CONTENT = {"site": {"brand": "NoviPL", "tagline": "APLIKACJE Z PASJĄ", "email": "kontakt@nowinowski.pl", "cta": "POROZMAWIAJMY"}, "hero": {"eyebrow": "APLIKACJE MOBILNE • SYSTEMY DLA FIRM", "title_before": "Tworzę aplikacje, które ", "title_highlight": "rozwiązują", "title_after": " realne problemy", "subtitle": "Od autorskich aplikacji mobilnych po personalizowane systemy do zarządzania pracą w firmach. Projektuję rozwiązania dopasowane do ludzi, procesów i codziennych wyzwań."}, "about": {"title": "33 lata. Tata córeczki. Z technologią związany praktycznie od zawsze.", "text": "Branża IT towarzyszy mi przez większość życia. Choć moja aktywność zawodowa w tym świecie miała swoje przerwy, zainteresowanie technologią, komputerami i tworzeniem własnych rozwiązań nigdy nie zniknęło. Zawsze ciągnęło mnie do sprawdzania, jak coś działa, szukania lepszych sposobów i budowania rzeczy po swojemu.
+
+Dziś wykorzystuję zdobyte doświadczenia, ciekawość i możliwości nowoczesnych technologii, żeby tworzyć aplikacje rozwiązujące realne problemy. Nie interesuje mnie budowanie projektów wyłącznie po to, żeby dobrze wyglądały w portfolio. Największą satysfakcję daje mi moment, kiedy pomysł zamienia się w działający produkt, z którego ktoś faktycznie korzysta.
+
+Tworzę zarówno własne aplikacje mobilne, jak i personalizowane rozwiązania dla firm. Lubię zaczynać od poznania prawdziwej potrzeby, następnie zaprojektować rozwiązanie, zbudować je, przetestować w praktyce i rozwijać wraz z kolejnymi wymaganiami.
+
+Prywatnie jestem 33-letnim tatą córeczki. To właśnie ona jest jedną z moich największych motywacji, żeby stale się rozwijać, budować coś własnego i każdego dnia robić kolejny krok do przodu."}, "projects": [{"name": "Peek", "theme": "gold", "description": "Zagadki, ciekawostki i treści, które dają chwilę rozrywki i trening dla umysłu.", "features": ["5 kategorii treści", "Rozbudowana baza zagadek i ciekawostek", "System ocen i rekomendacji", "Treści projektowane z myślą o szybkim, wygodnym odbiorze"], "tech": ["Flutter", "Firebase", "Cloud Firestore"], "screens": ["assets/screens/peek-quiz.jpg", "assets/screens/peek-fact.jpg", "assets/screens/peek-math.jpg"]}, {"name": "FuseMap", "theme": "green", "description": "Profesjonalne narzędzie do tworzenia i porządkowania dokumentacji instalacji elektrycznych.", "features": ["Instalacje, rozdzielnice, obwody i odbiorniki", "Interaktywny schemat instalacji", "Eksport profesjonalnych dokumentów PDF", "Zdjęcia, notatki i dokumentacja techniczna"], "tech": ["Flutter", "SQLite", "PDF"], "screens": ["assets/screens/fusemap-portfolio-1.jpg", "assets/screens/fusemap-portfolio-2.jpg"]}, {"name": "AutoKronika", "theme": "blue", "description": "Historia samochodu, serwisu i kosztów eksploatacji uporządkowana w jednej aplikacji.", "features": ["Historia serwisowa i tankowania", "Koszty eksploatacji i statystyki", "Dokumenty i zdjęcia", "Czytelna historia pojazdu"], "tech": ["Flutter", "SQLite", "PDF"], "screens": ["assets/screens/autokronika-portfolio-1.jpg", "assets/screens/autokronika-portfolio-2.jpg", "assets/screens/autokronika-portfolio-3.jpg"]}, {"name": "PstrykList", "theme": "purple", "description": "Proste i wygodne listy zadań stworzone z myślą o codziennym użytkowaniu.", "features": ["Własne kategorie i listy", "Szybkie dodawanie zadań", "Postęp realizacji", "Prosty interfejs bez zbędnych funkcji"], "tech": ["Flutter", "SQLite", "Local Storage"], "screens": ["assets/screens/pstryk-portfolio-1.jpg", "assets/screens/pstryk-portfolio-2.jpg"]}], "services": [{"title": "Personalizowane aplikacje dla firm", "text": "Tworzę dedykowane aplikacje do zarządzania codzienną pracą firmy — dopasowane do jej procesów zamiast zmuszania zespołu do pracy według gotowego, uniwersalnego systemu."}, {"title": "Zadania i obieg pracy", "text": "Zadania, statusy, kategorie, terminy, przypisania, notatki, załączniki i historia zmian — uporządkowane w jednym miejscu."}, {"title": "Zespół, role i uprawnienia", "text": "Konta użytkowników, poziomy dostępu, role administratorów i pracowników oraz kontrola tego, kto może przeglądać i modyfikować konkretne dane."}, {"title": "Dane, dokumenty i zdjęcia", "text": "Centralne miejsce na dokumentację, zdjęcia, pliki, opisy i informacje związane z projektami, zleceniami, klientami, sprzętem lub innymi elementami działalności."}, {"title": "Komunikacja wewnętrzna", "text": "Komunikaty dla zespołu, ważne informacje, potwierdzenia przeczytania i uporządkowany przepływ informacji bez szukania ich w wielu różnych kanałach."}, {"title": "Flota, sprzęt i terminy", "text": "Ewidencja pojazdów lub wyposażenia, terminy przeglądów, ubezpieczeń i serwisów, notatki, zgłoszenia usterek oraz dokumentacja zdjęciowa."}, {"title": "Synchronizacja i praca offline", "text": "Rozwiązania mogą działać także przy słabym lub chwilowo niedostępnym internecie, a dane synchronizować się z centralnym systemem po odzyskaniu połączenia."}, {"title": "Raporty, backup i rozwój", "text": "Eksport danych i raportów, kopie bezpieczeństwa, historia operacji oraz możliwość dalszej rozbudowy systemu wraz z rozwojem firmy."}], "process": [{"title": "Rozpoznanie potrzeb", "text": "Poznaję sposób działania firmy, problemy i procesy, które warto uprościć lub przenieść do jednej aplikacji."}, {"title": "Projekt rozwiązania", "text": "Układam funkcje, role użytkowników, przepływ danych i interfejs tak, aby system pasował do rzeczywistej pracy zespołu."}, {"title": "Development i testy", "text": "Buduję kolejne działające etapy, testuję je na urządzeniach i poprawiam na podstawie realnego użytkowania."}, {"title": "Wdrożenie i rozwój", "text": "Przygotowuję finalną wersję, wdrożenie oraz możliwość dalszego rozwijania aplikacji, gdy pojawią się nowe potrzeby."}], "tech": ["Flutter", "Dart", "Python", "FastAPI", "PostgreSQL", "SQLite", "Firebase", "Git"], "contact": {"eyebrow": "POROZMAWIAJMY O TWOIM PROJEKCIE", "title": "Masz pomysł? Zamieńmy go w działający produkt.", "text": "Opisz krótko, czego potrzebujesz. Może to być nowa aplikacja mobilna, personalizowany system dla firmy albo rozwój istniejącego produktu. Odpowiem i ustalimy, co ma największy sens.", "availability": "Przyjmuję zapytania dotyczące nowych projektów i rozwoju istniejących aplikacji."}};
 
 let data = structuredClone(DEFAULT_CONTENT);
 let current = 'general';
@@ -9,6 +15,20 @@ let db;
 let firebase = {};
 
 const escAttr = value => String(value ?? '').replaceAll('"', '&quot;');
+
+function deepMerge(base, incoming) {
+  if (Array.isArray(base)) return Array.isArray(incoming) ? incoming : base;
+  if (base && typeof base === 'object') {
+    const out = {...base};
+    if (incoming && typeof incoming === 'object') {
+      for (const key of Object.keys(incoming)) {
+        out[key] = key in base ? deepMerge(base[key], incoming[key]) : incoming[key];
+      }
+    }
+    return out;
+  }
+  return incoming ?? base;
+}
 
 async function initFirebase() {
   if (!FIREBASE_ENABLED) {
@@ -77,7 +97,7 @@ async function loadRemote() {
     const snap = await firebase.fsMod.getDoc(
       firebase.fsMod.doc(db, 'site', 'content')
     );
-    data = snap.exists() ? snap.data() : structuredClone(DEFAULT_CONTENT);
+    data = snap.exists() ? deepMerge(DEFAULT_CONTENT, snap.data()) : structuredClone(DEFAULT_CONTENT);
     status.textContent = snap.exists()
       ? 'Treści załadowane z Firestore.'
       : 'Brak treści w Firestore — załadowano dane domyślne.';
@@ -229,8 +249,21 @@ function tech() {
   `;
 }
 
+function contact() {
+  return `
+    <div class="card">
+      <h2>Sekcja kontaktowa</h2>
+      ${field('contact.eyebrow', 'Nadtytuł', data.contact.eyebrow)}
+      ${field('contact.title', 'Tytuł', data.contact.title)}
+      ${field('contact.text', 'Opis', data.contact.text, true)}
+      ${field('contact.availability', 'Informacja o dostępności', data.contact.availability, true)}
+      <p class="small-note">Adres e-mail zmienisz w zakładce „Treści główne”. Formularz na stronie przygotowuje wiadomość w programie pocztowym użytkownika.</p>
+    </div>
+  `;
+}
+
 function render() {
-  const map = { general, projects, services, process, tech };
+  const map = { general, projects, services, process, tech, contact };
   document.getElementById('editor').innerHTML = map[current]();
   bindEditor();
 }

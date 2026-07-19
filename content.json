@@ -14,7 +14,7 @@
   },
   "about": {
     "title": "33 lata. Tata córeczki. Z technologią związany praktycznie od zawsze.",
-    "text": "Branża IT towarzyszy mi przez większość życia. Choć moja aktywność zawodowa w tym świecie miała swoje przerwy, zainteresowanie technologią, programowaniem i tworzeniem własnych rozwiązań nigdy nie zniknęło. Dziś wykorzystuję doświadczenie, ciekawość i nowe możliwości technologiczne, żeby budować aplikacje, które faktycznie mają zastosowanie. Lubię zaczynać od prawdziwej potrzeby, znaleźć rozwiązanie, zbudować je, przetestować i doprowadzić do momentu, w którym naprawdę działa. Prywatnie jestem tatą córeczki — i to właśnie ona jest jedną z moich największych motywacji, żeby rozwijać się, budować coś własnego i każdego dnia iść krok dalej."
+    "text": "Branża IT towarzyszy mi przez większość życia. Choć moja aktywność zawodowa w tym świecie miała swoje przerwy, zainteresowanie technologią, komputerami i tworzeniem własnych rozwiązań nigdy nie zniknęło. Zawsze ciągnęło mnie do sprawdzania, jak coś działa, szukania lepszych sposobów i budowania rzeczy po swojemu.\n\nDziś wykorzystuję zdobyte doświadczenia, ciekawość i możliwości nowoczesnych technologii, żeby tworzyć aplikacje rozwiązujące realne problemy. Nie interesuje mnie budowanie projektów wyłącznie po to, żeby dobrze wyglądały w portfolio. Największą satysfakcję daje mi moment, kiedy pomysł zamienia się w działający produkt, z którego ktoś faktycznie korzysta.\n\nTworzę zarówno własne aplikacje mobilne, jak i personalizowane rozwiązania dla firm. Lubię zaczynać od poznania prawdziwej potrzeby, następnie zaprojektować rozwiązanie, zbudować je, przetestować w praktyce i rozwijać wraz z kolejnymi wymaganiami.\n\nPrywatnie jestem 33-letnim tatą córeczki. To właśnie ona jest jedną z moich największych motywacji, żeby stale się rozwijać, budować coś własnego i każdego dnia robić kolejny krok do przodu."
   },
   "projects": [
     {
@@ -161,5 +161,11 @@
     "SQLite",
     "Firebase",
     "Git"
-  ]
+  ],
+  "contact": {
+    "eyebrow": "POROZMAWIAJMY O TWOIM PROJEKCIE",
+    "title": "Masz pomysł? Zamieńmy go w działający produkt.",
+    "text": "Opisz krótko, czego potrzebujesz. Może to być nowa aplikacja mobilna, personalizowany system dla firmy albo rozwój istniejącego produktu. Odpowiem i ustalimy, co ma największy sens.",
+    "availability": "Przyjmuję zapytania dotyczące nowych projektów i rozwoju istniejących aplikacji."
+  }
 }
